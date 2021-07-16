@@ -1,6 +1,6 @@
 name:                aws-transcribe-ws
 version:             0.0.1.0
-github:              "githubuser/am-test"
+github:              "3kyro/aws-transcribe"
 license:             BSD3
 author:              "Kyriakos Papachrysanthou"
 maintainer:          "papachrysanthou.k@gmail.com"
@@ -11,8 +11,8 @@ extra-source-files:
 - ChangeLog.md
 
 # Metadata used when publishing your package
-# synopsis:            Websocket streaming to Amazon Transcribe service
-# category:            Web
+synopsis:            Websocket streaming to Amazon Transcribe service
+category:            Web
 
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
