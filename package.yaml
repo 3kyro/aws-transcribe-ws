@@ -1,0 +1,52 @@
+name:                aws-transcribe-ws
+version:             0.0.1.0
+github:              "githubuser/am-test"
+license:             BSD3
+author:              "Kyriakos Papachrysanthou"
+maintainer:          "papachrysanthou.k@gmail.com"
+copyright:           "2021 Kyriakos Papachrysanthou"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Websocket streaming to Amazon Transcribe service
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/am-test#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- websockets
+- bytestring
+- time
+- wuss
+- text
+- lens
+- crc
+- stm
+- cryptohash-sha256
+- base16-bytestring
+- aeson
+- binary
+- async
+
+library:
+  source-dirs: src
+  ghc-options:
+  - -Wall
+
+tests:
+  am-test-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - am-test
